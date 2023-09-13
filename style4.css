@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+}
+
+.countdown {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    margin: 0 20px;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    color: #777;
+}
+/* Add fireworks animation */
+@keyframes fireworks {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.fireworks {
+    width: 20px;
+    height: 20px;
+    background-color: #ff9900;
+    position: absolute;
+    animation: fireworks 1s ease-out infinite;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    /* Adjust the styles for smaller screens here */
+    .countdown {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    div {
+        margin: 0 5px; /* Reduce horizontal margin further for smaller screens */
+        flex: 0 0 10%; /* Adjust width of timer components for smaller screens */
+    }
+
+    span {
+        font-size: 1.2rem; /* Decrease font size further for smaller screens */
+    }
+
+    p {
+        font-size: 0.8rem; /* Decrease font size further for smaller screens */
+    }
+}

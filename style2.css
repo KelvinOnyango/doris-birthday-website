@@ -1,0 +1,56 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Background color for the entire page */
+    color: #333; /* Text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the heading for "About Us" */
+h1 {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    text-align: center;
+    padding: 20px 0;
+    color: #555; /* Heading color */
+}
+
+/* Style the subheading for "Our Story" */
+h2 {
+    font-size: 1.8rem; /* Adjust the size as needed */
+    color: #444; /* Subheading color */
+    margin: 20px 0;
+}
+
+/* Style the paragraph text */
+p {
+    font-size: 1.2rem; /* Adjust the size as needed */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Add some spacing to the bottom of the page */
+body {
+    padding-bottom: 20px;
+}
+@media (max-width: 768px) {
+    /* Adjust the styles for smaller screens here */
+    h1 {
+        font-size: 2rem; /* Decrease heading size for smaller screens */
+    }
+    h2 {
+        font-size: 1.5rem; /* Decrease subheading size for smaller screens */
+    }
+    p {
+        font-size: 1rem; /* Decrease paragraph text size for smaller screens */
+    }
+}
