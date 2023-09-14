@@ -56,4 +56,6 @@ header a:hover {
     header li {
         margin: 10px 0;
     }
+    header a{
+        padding: 10px;
 }
